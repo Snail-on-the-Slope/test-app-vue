@@ -50,8 +50,9 @@ export default {
     },
   },
   methods: {
-    newItem(el) {
+    async newItem(el) {
       this.type.push(el);
+      await this.$store.dispatch("fetchVehicleByType");
     },
   },
   components: {
