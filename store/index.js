@@ -24,14 +24,12 @@ const store = () =>
             },
             updateVehicles(state, veh) {
                 state.vehicles = veh;
-                console.log("updateVehicles", state.vehicles)
             },
             updateVehicleById(state, id) {
                 state.vehicleById = null;
                 state.vehicleById = Object.values(state.vehicles).filter(
                     e => e.id === id
                 );
-                console.log("updateVehicleById", state.vehicleById)
             },
             updateTypeVehicles(state) {
                 Object.values(state.vehicles).forEach(currentValue => {
@@ -39,7 +37,6 @@ const store = () =>
                         state.typeVehicles[currentValue.type].push(currentValue) :
                         (state.typeVehicles[currentValue.type] = [currentValue]);
                 });
-                console.log("updateTypeVehicles", state.typeVehicles)
             },
             createVehicles(state, newVeh) {
                 state.vehicles.unshift(newVeh);
@@ -48,25 +45,19 @@ const store = () =>
         actions: {
             async fetchVehicles(ctx) {
                 try {
-                    console.log("fetchVehicles_1")
                     let veh = await getVehicles();
-                    console.log("fetchVehicles_2", veh)
                     ctx.commit("updateVehicles", veh);
-                    console.log("fetchVehicles_3")
-                        // ctx.commit("updateTypeVehicles");
+                    // ctx.commit("updateTypeVehicles");
                 } catch (e) {
                     console.log(e);
                     ctx.state.error = true;
                 }
             },
             async fetchVehicleById(ctx, id) {
-                console.log("fetchVehicleById_1")
                 ctx.commit("updateVehicleById", id);
-                console.log("fetchVfetchVehicleById_2ehicles_1")
                 return ctx.getters.vehicleById ? true : false;
             },
             async fetchVehicleByType(ctx) {
-                console.log("fetchVehicleByType");
                 ctx.commit("updateTypeVehicles");
             }
         },
