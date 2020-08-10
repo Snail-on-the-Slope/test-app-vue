@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Codec Pro";
+    src: local("Codec Pro Bold"), local("Codec-Pro-Bold"), url("~@/assets/fonts/Codec Pro/CodecPro-Bold.woff2") format("woff2"), url("~@/assets/fonts/Codec Pro/CodecPro-Bold.woff") format("woff"), url("~@/assets/fonts/Codec Pro/CodecPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Codec Pro";
+    src: local("Codec Pro Light"), local("Codec-Pro-Light"), url("~@/assets/fonts/Codec Pro/CodecPro-Light.woff2") format("woff2"), url("~@/assets/fonts/Codec Pro/CodecPro-Light.woff") format("woff"), url("~@/assets/fonts/Codec Pro/CodecPro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "Codec Pro";
+//     src: local("Codec Pro Light Italic"), local("Codec-Pro-Light-Italic"), url("~@/assets/fonts/Codec Pro/CodecPro-LightItalic.woff2") format("woff2"), url("~@/assets/fonts/Codec Pro/CodecPro-LightItalic.woff") format("woff"), url("~@/assets/fonts/Codec Pro/CodecPro-LightItalic.ttf") format("truetype");
+//     font-weight: 300;
+//     font-style: italic;
+// }

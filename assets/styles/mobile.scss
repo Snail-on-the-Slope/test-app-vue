@@ -1,0 +1,221 @@
+// Navbar
+.navbar {
+    margin-top: 5%;
+    .nav-left {
+        justify-content: space-between;
+        width: 30%;
+        .logo {
+            #logo {
+                width: 32px;
+                height: 32px;
+            }
+            #pepelane {
+                width: 69px;
+                height: 13px;
+                align-self: center;
+            }
+        }
+    }
+    .nav-right {
+        margin-bottom: 2%;
+        width: 50%;
+        .night-theme {
+            width: 10%;
+        }
+        .notification {
+            width: 15%;
+            .i {
+                img:first-child {
+                    position: absolute;
+                    width: 15px;
+                    height: 19px;
+                    right: 25%;
+                }
+                img:last-child {
+                    position: absolute;
+                    right: 24.9%;
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+        }
+        .profile {
+            justify-content: flex-end;
+            #rectangle {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .i {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .hide {
+        display: none;
+    }
+}
+
+// Main
+.app-main-layout {
+    .app-content {
+        width: 100%;
+        padding: 0 2%;
+        margin-left: -2%;
+    }
+    .height {
+        height: 90vh;
+    }
+    // Vehicles
+    .vehicles {
+        width: 100%;
+        .header-content {
+            .type-container {
+                margin-top: 3%;
+                .text {
+                    h1 {
+                        font-size: 24px;
+                        margin-right: 2%;
+                    }
+                    select {
+                        font-size: 22px;
+                        margin-top: 0;
+                        margin-bottom: 2px;
+                        padding-right: 0;
+                    }
+                }
+            }
+            .add-container {
+                width: 36%;
+                margin-top: 2%;
+                h2 {
+                    font-size: 16px;
+                    line-height: 136%;
+                    margin-right: 10%;
+                }
+                .button-add-vehicle {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 8px;
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+        .content {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+// Lot
+.app-lot-layout {
+    .app-content {
+        width: 100%;
+        margin-left: 2%;
+        .lot-page {
+            flex-direction: column;
+            max-height: 80vh;
+            overflow: auto;
+            .content-left {
+                img {
+                    width: 100%;
+                    // width: 343px;
+                    height: 332px;
+                    border-radius: 16px;
+                }
+            }
+            .content-right {
+                width: 90%;
+                h1 {
+                    font-size: 24px;
+                }
+                .lot-details-nav {
+                    ul {
+                        width: 80%;
+                    }
+                }
+                .lot-details-content {
+                    //Specifications
+                    .specifications {
+                        h2 {
+                            font-size: 20px;
+                            line-height: 140%;
+                        }
+                        .feature {
+                            .feature-left {
+                                width: 20%;
+                                height: 80px;
+                                .feature-img {
+                                    width: 20px;
+                                    height: 22px;
+                                }
+                            }
+                            .feature-right {
+                                width: 75%;
+                            }
+                        }
+                    } //Team
+                    .team {
+                        h2 {
+                            font-size: 20px;
+                            line-height: 140%;
+                            // margin: 5% 0;
+                        }
+                        .specialists-container {
+                            width: 100%;
+                            display: block;
+                            .specialist {
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                margin-top: 4%;
+                                img {
+                                    width: 40%;
+                                    height: 80px;
+                                    margin-right: 7%;
+                                }
+                                .specialist-text {
+                                    width: 50%;
+                                    h4 {
+                                        font-size: 16px;
+                                        line-height: 152%;
+                                        margin: 2% 0;
+                                    }
+                                    p {
+                                        margin: 3% 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //
+                .rent-container {
+                    position: absolute;
+                    top: 85vh;
+                    right: -2%;
+                    width: 93%;
+                    margin-bottom: 2%;
+                    box-shadow: 0 -9px 15px -3px rgba(231, 231, 231, 0.5);
+                    .rent-text {
+                        width: 60%;
+                        h4 {
+                            font-size: 16px;
+                            margin-right: 4%;
+                        }
+                    }
+                    .button-rent-now {
+                        width: 40%;
+                        p {
+                            font-size: 14px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
